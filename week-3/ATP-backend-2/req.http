@@ -1,0 +1,89 @@
+###read all users(request to protected route)
+GET http://localhost:4000/user-api/users
+cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFra2lAZ21haWwuY29tIiwiaWF0IjoxNzczMDU4MTg0LCJleHAiOjE3NzMwNjE3ODR9.rbMcdCZtJUjX0o9nuPf13LZ7rHjk38fqOJ3ymtsa5mA; Path=/; HttpOnly; SameSite=Lax
+//all information is shown
+//push and put support data to the api as body of the request object
+//get and delete do not support body of the request object.so that these 2 request can send data through
+//end point  
+
+###read specific user by id
+GET http://localhost:4000/user-api/user
+
+###create new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"akki",
+    "password":"teddy123",
+    "email":"akki@gmail.com",
+    "age":20
+}
+
+###update the user
+//from content-type to the ending brace is called as body
+//get and delete do not support body
+PUT http://localhost:4000/user-api/users/69aa98996b6b2634543f74d7
+cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFra2lAZ21haWwuY29tIiwiaWF0IjoxNzczMDU4MTg0LCJleHAiOjE3NzMwNjE3ODR9.rbMcdCZtJUjX0o9nuPf13LZ7rHjk38fqOJ3ymtsa5mA; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+{
+    "username":"teddy",
+    "password":"teddy12345",
+    "email":"tedd@gmail.com",
+    "age":20
+}
+
+###user login
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"teddy@gmail.com",
+    "password":"teddy123"
+}
+
+
+
+###delete a user by id
+DELETE http://localhost:4000/user-api/users/69aa8c78adcc778e2358870c
+
+
+###add product to the cart
+
+PUT http://localhost:4000/user-api/cart/product-id/69b249f7eb71ac2e35440761
+
+###create requests for product api
+
+###get all the products
+GET http://localhost:4000/product-api/products
+
+###read product by brand
+GET http://localhost:4000/product-api/products/2
+
+###create new product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":3,
+    "productName":"teddyBear",
+    "price":10001,
+    "brand":"nike"
+}
+
+###update a product
+PUT http://localhost:4000/product-api/products/3
+Content-Type: application/json
+
+{
+    "productId":3,
+    "productName":"mask",
+    "price":10202,
+    "brand":"adidas"
+}
+
+
+
+###delete a product by id
+DELETE http://localhost:4000/product-api/products/3
