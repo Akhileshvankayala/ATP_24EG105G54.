@@ -1,0 +1,34 @@
+.emp-card{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    border: 0px solid black;
+    box-shadow: 0px 0px 10px;
+    height: 550px;
+    
+}
+.emp{
+    padding: 10px;
+    border: 0px solid black;
+    margin: 10px;
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    height: 400px;
+}
+img{
+    border-radius: 50%;
+}
+h5{
+    background-color: #c05e5e;
+    margin: 0px 110px;
+    text-align: center;
+    border-radius: 10px;
+}
+.nav{
+    display: flex;
+    background-color: #6d6565;
+    justify-content: space-around;
+}
+.main{
+    margin-top: 100px;
+}

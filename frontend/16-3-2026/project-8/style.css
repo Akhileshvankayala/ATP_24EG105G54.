@@ -1,0 +1,25 @@
+.card{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 200px;
+    padding: 10px;
+    text-align: center;
+}
+.profile{
+    border-radius: 500px;
+}
+.linkedin-logo{
+    width: 100px;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+
+}
+.github-logo{
+    width: 80px;
+    position: relative;
+    bottom: 310px;
+    left: 100px
+}

@@ -1,0 +1,22 @@
+form{
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #e09f9f;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.formu{
+    padding: 10px;
+
+}
+input[type="text"],input[type="password"],select,textarea{
+    width: 100%;
+    padding: 10px;
+}
+button{
+    border: none;
+    margin:auto
+}

@@ -1,0 +1,45 @@
+###create new article
+POST http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "author":"69bd2e3ae39bc71b312ca472",
+    "title":"Article by author1",
+    "category":"programming",
+    "content":"article on programming"
+}
+
+###author login
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+    "email":"cake@gmail.com",
+    "password":"cake"
+}
+
+###author logout
+GET http://localhost:4000/auth/logout
+
+###read own articles
+GET http://localhost:4000/author-api/article
+
+###modify new article
+PUT http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"69bd2ebae39bc71b312ca479",
+    "title":"Article by author1",
+    "category":"AI",
+    "content":"article on AI"
+}
+
+###delete and restore and article
+PATCH http://localhost:4000/author-api/article
+Content-Type:application/json
+
+{
+    "articleId":"69bd2ebae39bc71b312ca479",
+    "isArticleAlive":true
+}

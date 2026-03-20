@@ -1,0 +1,18 @@
+@media  screen and (max-width:600px) {
+    body{
+        background-color: #2caed6;
+    }
+}
+@media  screen and (min-width:601px) {
+    body{
+        background-color: #41db5b;
+    }
+}
+img{
+    width: 100%;
+    max-width: 600px;
+}
+
+h1{
+    font-size: clamp(2rem,8vw,5rem);
+}

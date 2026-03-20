@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Datatype:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Love+Light&family=Loved+by+the+King&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* reset */
+/* max-width lets width to grow upto a certain value */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* rgb(200,230,120);-->total no of shades are 256(0-255) */
+
+h1{
+    color: rgb(77, 243, 243);
+    background-color:burlywood;
+    text-align: center;
+    border: 3px solid black;
+    padding: 50px 100px ;
+    margin: 70px;
+    /* border-radius: 50%;--->to make it to circle */
+    width: 100%;/*width is taken by the content only*/
+    max-width: 500px;
+    box-sizing: border-box;/*now width will be applied as above for the whole element*/
+    font-family: "Datatype", monospace;
+}
+
+.heading2{
+color: blueviolet;
+}

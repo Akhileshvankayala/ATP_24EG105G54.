@@ -1,0 +1,12 @@
+.employee-card{
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+img{
+    width: 200px;
+}
